@@ -28,7 +28,7 @@ public class Hooks {
   	driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
   	driver.manage().deleteAllCookies();
   	driver.manage().window().maximize();
-  	
+  	driver.get("https://demo.guru99.com/V4/");
   }
 
   @AfterMethod
