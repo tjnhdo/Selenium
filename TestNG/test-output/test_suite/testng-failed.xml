@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [test_suite]" guice-stage="DEVELOPMENT">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://demo.guru99.com/V4/"/>
+  <test thread-count="5" name="Login Gru99(failed)">
+    <classes>
+      <class name="TestCase.TC_Login">
+        <methods>
+          <include name="login_Valid_User"/>
+          <include name="openBrowser"/>
+          <include name="embedScreenshot"/>
+        </methods>
+      </class> <!-- TestCase.TC_Login -->
+    </classes>
+  </test> <!-- Login Gru99(failed) -->
+</suite> <!-- Failed suite [test_suite] -->

@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Common.Hooks">
+      <class name="TestCase_LoginFunction.TC_Login">
         <methods>
-          <include name="openBrowser"/>
           <include name="embedScreenshot"/>
+          <include name="login_Valid_User"/>
+          <include name="openBrowser"/>
         </methods>
-      </class> <!-- Common.Hooks -->
+      </class> <!-- TestCase_LoginFunction.TC_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

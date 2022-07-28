@@ -1,7 +1,8 @@
 package PageAction;
 
 import org.openqa.selenium.WebDriver;
-import Common.Hooks;
+
+import CommonAction.Hooks;
 import PageInterface.LoginInterface;
 import PageInterface.LoginPageUi;
 
@@ -13,7 +14,7 @@ public class LoginPage {
 	public LoginPage()
 	{
 		LoginUi = new LoginPageUi();
-		driver = Hooks.driver;
+		driver = Hooks.getDriver();
 	}
 	
 	public LoginPage login(String UserName,String PassWord)
